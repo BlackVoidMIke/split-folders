@@ -170,7 +170,7 @@ def split_files(files, split_train, split_val, use_test):
     files_train = files[:split_train]
     files_val = files[split_train:split_val] if use_test else files[split_train:]
 
-    li = [(files_train, "train"), (files_val, "val")]
+    li = [(files_train, "train"), (files_val, "valid")]
 
     # optional test folder
     if use_test:
